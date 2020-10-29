@@ -8,7 +8,7 @@ In Proceedings of the Thirty-fourth Conference on Neural Information Processing 
 ```
 
 In this work, we study the effect of a task on the representation of meaning in the brain.
-<img src="./img/overview.png" alt="high level idea" width="500" align=center>
+<img src="./img/overview.png" alt="high level idea" width="500" align=right>
 
 
 We include the implementation of the 4 hypotheses discussed in our
