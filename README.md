@@ -14,6 +14,7 @@ In this work, we study the effect of a task on the representation of meaning in 
 We include the implementation of the 4 hypotheses discussed in our paper in our
 paper on how the task and stimulus might combine together to give rise to the 
 recorded neural activity.
+
 ![hypotheses](img/hypotheses.png?raw=true "hypotheses")
 
 
