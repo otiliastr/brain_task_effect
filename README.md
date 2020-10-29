@@ -7,10 +7,23 @@ Mariya Toneva*, Otilia Stretcu*, Barnabás Póczos, Leila Wehbe, and Tom Mitchel
 In Proceedings of the Thirty-fourth Conference on Neural Information Processing Systems 2020.
 ```
 
+In this work, we study the effect of a task on the representation of meaning in the brain.
+<img src="./img/overview.png" alt="high level idea" width="500" align=center>
+
+
+We include the implementation of the 4 hypotheses discussed in our paper in our
+paper on how the task and stimulus might combine together to give rise to the 
+recorded neural activity.
+![hypotheses](img/hypotheses.png?raw=true "hypotheses")
+
+
 For more information about the methods in this repository, please check out our:
 - [NeurIPS 2020 paper](https://arxiv.org/abs/2009.08424)
 - [slides](https://drive.google.com/file/d/1-q7R3a0jxH_zE6of7aD4at6NgviyCZW8/view?usp=sharing)
-- [video](https://www.youtube.com/watch?v=-SXlEhSTSi8&feature=youtu.be&ab_channel=OtiliaStretcu)
+- [3 min video](https://www.youtube.com/watch?v=-SXlEhSTSi8&feature=youtu.be&ab_channel=OtiliaStretcu)
+- [13 min video](https://youtu.be/M1TpiYsRvt0?t=5552)
+
+
 
 If using this code, please cite:
 ```
