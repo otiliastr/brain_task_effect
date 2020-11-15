@@ -44,6 +44,23 @@ The variable `word2vec_representations` is a dictionary mapping from the text
 of a word (e.g. 'carrot') to its 300-dimensional word2vec vector representation.
 
 
+### BERT semantic features
+We additionally provide the BERT vector representations for the stimuli and questions used in our
+experiment. These can be found at `BERT_dict.npy`. This can be loaded
+as follows:
+```python
+import numpy
+with open('BERT_dict.npy', 'rb') as fin:
+    BERT_representations = np.load(fin, allow_pickle=True).item()
+```
+The variable `BERT_representation` is a dictionary of dictionaries with the following keys:
+'questions_text': the text that corresponds to each question
+'stimuli_text': the text that corresponds to each stimulus
+'questions_BERT_pooled: the BERT representations from the pooled output (described in Appendix D) in the same order as in 'questions_text'
+'questions_BERT_CLS': the BERT representations from the CLS token at the last layer (described in Appendix D) in the same order as in 'questions_text
+'stimuli_BERT': the token-level word embeddings from BERT (described in Appendix D) in the same order as in 'stimuli_text'
+
+
 ## MEG sensor locations
 We provide the locations of the MEG sensors in `meg_sensor_locations.txt`.
 This file contains information about each of the 306 sensors, one per line, as 
