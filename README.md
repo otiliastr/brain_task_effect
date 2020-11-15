@@ -79,25 +79,25 @@ we provide the BERT and word2vec representations for the stimuli and questions
 used in our experiments. Further details below.
 
 
-### Mechanical Turk responses and semantic features
+#### Mechanical Turk responses and semantic features
 The Mechanical Turk responses for all combinations of 1000 words and 
 218 questions can be found at `data/MTurk_semantic_features.npz`. We provide
 further information on the structure of this file and how to load it at 
 `data/README.md`.
 
-### BERT semantic features
+#### BERT semantic features
 We provide the BERT representations used in our experiments presented in 
 Appendix D. 
 We provide further information on the structure of these files and how to load 
 them at `data/README.md`.
 
-### Word2vec semantic features
+#### Word2vec semantic features
 We provide the word2vec vector representations for the stimuli used in our
 experiment. These can be found at `data/word2vec_dict.npz`. 
 We provide further information on the structure of this file and how to load it at 
 `data/README.md`.
 
-### MEG data
+#### MEG data
 Due to the IRB when the data was first collected, the brain data is 
 unfortunately not available to share beyond the Mitchell laboratory. However, 
 the existing code framework can be extended to other datasets by implementing 
