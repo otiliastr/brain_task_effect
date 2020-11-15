@@ -156,7 +156,7 @@ def get_sensor_location_path():
 def get_semantic_feature_path():
     """Add here the path to the semantic features file.
      This is a file that contains the stimuli and question representations."""
-    return ''
+    return 'data/MTurk_semantic_features.npz'
 
 
 def get_data_path():
@@ -166,4 +166,4 @@ def get_data_path():
 
 def get_output_path():
     """Add here the path where you want to save results."""
-    return ''
+    return './outputs'

@@ -251,8 +251,8 @@ def get_stimulus_representation(semantic_features, stimulus_text, embedding_type
         stimulus_ind = np.where(get_all_stimulus_text(semantic_features) == stimulus_text)[0][0]
         return semantic_features['vectors'][stimulus_ind, to_keep_inds]
     elif embedding_type == 'word2vec':
-        with open('data/word2vec_dict.npz', "rb") as fin:
-            word2vec_representations = np.load(fin)
+        with open('data/word2vec_dict.npz', 'rb') as fin:
+            word2vec_representations = np.load(fin, allow_pickle=True)
         return word2vec_representations.item()[stimulus_text]
     elif embedding_type == 'random':
         import numpy.random
