@@ -11,14 +11,14 @@ used in our experiments. Further details below.
 The Mechanical Turk responses for all combinations of 1000 questions and 
 229 stimuli can be found at `MTurk_semantic_features.npz`. 
 These can be loaded as follows:
-```$python
+```python
 import numpy
 semantic_feature_path = 'MTurk_semantic_features.npz'
 semantic_features = np.load(open(semantic_feature_path, 'rb'))
 ```
 The variable `semantic_features` has a dictionary structure containing the 
 following fields:
-```$python
+```python
 semantic_features['stimuli']: A numpy array of strings containing the text of 
     the 1000 words shown during the Mechanical Turk experiment.
 semantic_features['features']: A numpy array of strings containing the text of 
@@ -33,7 +33,7 @@ semantic_features['vectors']: A numpy array of shape (1000, 229), where each
 We also provide the word2vec vector representations for the stimuli used in our
 experiment. These can be found at `word2vec_dict.npz`. This can be loaded
 as follows:
-```$python
+```python
 import numpy
 with open('word2vec_dict.npz', 'rb') as fin:
     word2vec_representations = np.load(fin, allow_pickle=True).item()
