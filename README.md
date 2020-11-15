@@ -79,8 +79,7 @@ we provide the BERT and word2vec representations for the stimuli and questions
 used in our experiments. Further details below.
 
 
-#### Mechanical Turk responses and semantic features
-The Mechanical Turk responses for all combinations of 1000 words and 
+<h4> Mechanical Turk responses and semantic features </h4> The Mechanical Turk responses for all combinations of 1000 words and 
 218 questions can be found at `data/MTurk_semantic_features.npz`. We provide
 further information on the structure of this file and how to load it at 
 `data/README.md`.
