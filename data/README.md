@@ -53,17 +53,12 @@ import numpy
 with open('BERT_dict.npy', 'rb') as fin:
     BERT_representations = np.load(fin, allow_pickle=True).item()
 ```
-The variable `BERT_representation` is a dictionary of dictionaries with the following keys: 
-
-`'questions_text'`: the text that corresponds to each question
-
-`'stimuli_text'`: the text that corresponds to each stimulus
-
-`'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'`
-
-`'questions_BERT_CLS'`: the BERT representations from the CLS token at the last layer (described in Appendix D) in the same order as in `'questions_text'`
-
-`'stimuli_BERT'`: the token-level word embeddings from BERT (described in Appendix D) in the same order as in `'stimuli_text'`
+The variable `BERT_representation` is a dictionary of dictionaries with the following keys: <br />
+`'questions_text'`: the text that corresponds to each question <br />
+`'stimuli_text'`: the text that corresponds to each stimulus <br />
+`'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'` <br />
+`'questions_BERT_CLS'`: the BERT representations from the CLS token at the last layer (described in Appendix D) in the same order as in `'questions_text'` <br />
+`'stimuli_BERT'`: the token-level word embeddings from BERT (described in Appendix D) in the same order as in `'stimuli_text'` <br />
 
 
 ## MEG sensor locations
