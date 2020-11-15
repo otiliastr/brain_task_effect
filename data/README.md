@@ -9,7 +9,8 @@ used in our experiments. Further details below.
 
 ### Mechanical Turk responses
 The Mechanical Turk responses for all combinations of 1000 words and 
-229 questions can be found at `MTurk_semantic_features.npz`. 
+218 questions can be found at `MTurk_semantic_features.npz`. There are additional 
+11 perceptual features for each word that were added by the experimenters.
 These can be loaded as follows:
 ```python
 import numpy
@@ -22,7 +23,8 @@ following fields:
 semantic_features['stimuli']: A numpy array of strings containing the text of 
     the 1000 words shown during the Mechanical Turk experiment.
 semantic_features['features']: A numpy array of strings containing the text of 
-    the 229 questions asked during the Mechanical Turk experiment.
+    the 218 questions asked during the Mechanical Turk experiment, 
+    and the names of the 11 additional perceptual features.
 semantic_features['vectors']: A numpy array of shape (1000, 229), where each
     element (i,j) represents the answer to question j about word i. These 
     elements are integers from {1, 2, 3, 4, 5} representing the degree
