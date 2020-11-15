@@ -18,18 +18,10 @@ semantic_feature_path = 'MTurk_semantic_features.npz'
 semantic_features = np.load(open(semantic_feature_path, 'rb'))
 ```
 The variable `semantic_features` has a dictionary structure containing the 
-following fields:
-```python
-semantic_features['stimuli']: A numpy array of strings containing the text of 
-    the 1000 words shown during the Mechanical Turk experiment.
-semantic_features['features']: A numpy array of strings containing the text of 
-    the 218 questions asked during the Mechanical Turk experiment, 
-    and the names of the 11 additional perceptual features.
-semantic_features['vectors']: A numpy array of shape (1000, 229), where each
-    element (i,j) represents the answer to question j about word i. These 
-    elements are integers from {1, 2, 3, 4, 5} representing the degree
-    to which question j applies to word i.
-```
+following keys:
+- `'stimuli'`: A numpy array of strings containing the text of the 1000 words shown during the Mechanical Turk experiment.
+- `'features'`: A numpy array of strings containing the text of the 218 questions asked during the Mechanical Turk experiment, and the names of the 11 additional perceptual features.
+- `'vectors'`: A numpy array of shape (1000, 229), where each element (i,j) represents the answer to question j about word i. These elements are integers from {1, 2, 3, 4, 5} representing the degree to which question j applies to word i.
 
 ### Word2vec semantic features
 We also provide the word2vec vector representations for the stimuli used in our
@@ -53,12 +45,12 @@ import numpy
 with open('BERT_dict.npy', 'rb') as fin:
     BERT_representations = np.load(fin, allow_pickle=True).item()
 ```
-The variable `BERT_representation` is a dictionary of dictionaries with the following keys: <br />
-`'questions_text'`: the text that corresponds to each question <br />
-`'stimuli_text'`: the text that corresponds to each stimulus <br />
-`'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'` <br />
-`'questions_BERT_CLS'`: the BERT representations from the CLS token at the last layer (described in Appendix D) in the same order as in `'questions_text'` <br />
-`'stimuli_BERT'`: the token-level word embeddings from BERT (described in Appendix D) in the same order as in `'stimuli_text'` <br />
+The variable `BERT_representation` is a dictionary of dictionaries with the following keys: 
+- `'questions_text'`: the text that corresponds to each question
+- `'stimuli_text'`: the text that corresponds to each stimulus
+- `'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'`
+- `'questions_BERT_CLS'`: the BERT representations from the CLS token at the last layer (described in Appendix D) in the same order as in `'questions_text'` 
+- `'stimuli_BERT'`: the token-level word embeddings from BERT (described in Appendix D) in the same order as in `'stimuli_text'`
 
 
 ## MEG sensor locations
