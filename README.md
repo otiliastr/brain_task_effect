@@ -80,8 +80,8 @@ used in our experiments. Further details below.
 
 
 ### Mechanical Turk responses and semantic features
-The Mechanical Turk responses for all combinations of 1000 questions and 
-229 stimuli can be found at `data/MTurk_semantic_features.npz`. We provide
+The Mechanical Turk responses for all combinations of 1000 stimuli and 
+229 questions can be found at `data/MTurk_semantic_features.npz`. We provide
 further information on the structure of this file and how to load it at 
 `data/README.md`.
 
