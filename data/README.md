@@ -8,8 +8,8 @@ used in our experiments. Further details below.
 
 
 ### Mechanical Turk responses
-The Mechanical Turk responses for all combinations of 1000 questions and 
-229 stimuli can be found at `MTurk_semantic_features.npz`. 
+The Mechanical Turk responses for all combinations of 1000 words and 
+229 questions can be found at `MTurk_semantic_features.npz`. 
 These can be loaded as follows:
 ```python
 import numpy
