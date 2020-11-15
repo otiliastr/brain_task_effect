@@ -85,13 +85,11 @@ further information on the structure of this file and how to load it at
 `data/README.md`.
 
 **BERT semantic features** We provide the BERT representations used in our experiments presented in Appendix D. 
-We provide further information on the structure of these files and how to load 
-them at `data/README.md`.
+We provide further information on the structure of these files and how to load them at `data/README.md`.
 
 **Word2vec semantic features** We provide the word2vec vector representations for the stimuli used in our
-experiment. These can be found at `data/word2vec_dict.npz`. 
-We provide further information on the structure of this file and how to load it at 
-`data/README.md`.
+experiment. These can be found at `data/word2vec_dict.npz`. We provide further information on the structure 
+of this file and how to load it at `data/README.md`.
 
 **MEG data** Due to the IRB when the data was first collected, the brain data is 
 unfortunately not available to share beyond the Mitchell laboratory. However, 
