@@ -1,6 +1,6 @@
 # Data Description
 
-We thank Gustavo Sudre for collecting and sharing the MEG dataset, and 
+We thank Gustavo Sudre for collecting and sharing the MEG dataset with us, and 
 Dean Pomerleau for the human-judgment Mechanical Turk dataset!
 With their permission we provide the Mechanical Turk data. Additionally,
 we provide the BERT and word2vec representations for the stimuli and questions
