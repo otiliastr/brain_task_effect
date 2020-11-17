@@ -45,7 +45,7 @@ import numpy
 with open('BERT_dict.npy', 'rb') as fin:
     BERT_representations = np.load(fin, allow_pickle=True).item()
 ```
-The variable `BERT_representation` is a dictionary of dictionaries with the following keys: 
+The variable `BERT_representation` has a dictionary structure containing the following keys: 
 - `'questions_text'`: the text that corresponds to each question
 - `'stimuli_text'`: the text that corresponds to each stimulus
 - `'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'`
