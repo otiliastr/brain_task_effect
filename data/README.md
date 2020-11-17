@@ -15,9 +15,9 @@ The features for each word can be loaded as follows:
 ```python
 import numpy
 mturk_feature_path = 'MTurk_semantic_features.npz'
-mturk_features = np.load(open(mturk_feature_path, 'rb'))
+mturk_representations = np.load(open(mturk_feature_path, 'rb'))
 ```
-The variable `mturk_features` has a dictionary structure containing the 
+The variable `mturk_representations` has a dictionary structure containing the 
 following keys:
 - `'stimuli'`: A numpy array of strings containing the text of the 1000 words shown during the Mechanical Turk experiment.
 - `'features'`: A numpy array of strings containing the text of the 218 questions asked during the Mechanical Turk experiment, and the names of the 11 additional perceptual features.
@@ -45,7 +45,7 @@ import numpy
 with open('BERT_dict.npy', 'rb') as fin:
     BERT_representations = np.load(fin, allow_pickle=True).item()
 ```
-The variable `BERT_representation` has a dictionary structure containing the following keys: 
+The variable `BERT_representations` has a dictionary structure containing the following keys: 
 - `'questions_text'`: the text that corresponds to each question
 - `'stimuli_text'`: the text that corresponds to each stimulus
 - `'questions_BERT_pooled`: the BERT representations from the pooled output (described in Appendix D) in the same order as in `'questions_text'`
